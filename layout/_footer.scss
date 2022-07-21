@@ -1,0 +1,73 @@
+.footer {
+  @include footerPadding;
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    @include sm {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .footer__container--item--one {
+      .springblock__logo {
+        z-index: -1 !important;
+      }
+      p {
+        width: 227px;
+        font-weight: 400;
+        font-size: $sm-font;
+        line-height: 26px;
+        color: $feint-light-dark;
+        padding-top: 0.1em;
+      }
+    }
+
+    .footer__container--item--two {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-weight: 700;
+        font-size: $sm-font;
+        line-height: 19px;
+        color: $feint-light-dark;
+        font-family: $fira-sans-font;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: $sm-font;
+        line-height: 26px;
+        color: $light-dark;
+        display: grid;
+        padding: 0.5rem 0;
+
+        @include sm {
+          font-size: 1rem;
+        }
+      }
+
+      .footer__container--item--three--social {
+        display: flex;
+        gap: 30px;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .footer__copy {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-weight: 400;
+    font-size: $sm-font;
+    line-height: 26px;
+    color: #000000;
+
+    @include lg {
+      text-align: left;
+    }
+  }
+}

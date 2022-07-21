@@ -1,0 +1,31 @@
+@mixin navigationLinks {
+  font-size: $sm-font;
+  color: $lighter-gray;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin containerPadding {
+  padding: 1rem 5rem;
+
+  @include lg {
+    padding: 2rem;
+  }
+}
+
+@mixin footerPadding {
+  padding: 1rem 5rem;
+
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+}
